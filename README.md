@@ -11,3 +11,5 @@ TBC
 ## Link(s) 
 * [Live Preview]()
 * [The Odin Project](https://www.theodinproject.com)
+
+Credit to http://www.onlinewebfonts.com/icon for the SVGs
