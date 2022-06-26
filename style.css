@@ -14,7 +14,7 @@ body{
     flex-direction: column;
     justify-content: space-between;
     height: 70vh;
-    width: 70vh;
+    width: 40vw;
     border-radius: 15px;
     border: dashed black 5px;
     padding: 5px;
@@ -68,4 +68,16 @@ body{
 }
 #playerScore,#computerScore{
     height: 60%;
+}
+@media all and (max-width: 850px) {
+    #container{
+        height: 60vh;
+        width: 70vw;
+    }
+}
+@media all and (max-width: 500px) {
+    #container{
+        height: 50vh;
+        width: 75vw;
+    }
 }
