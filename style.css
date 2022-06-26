@@ -1,0 +1,71 @@
+body{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+    font-family: 'Courier New', Courier, monospace;
+}
+#container{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 70vh;
+    width: 70vh;
+    border-radius: 15px;
+    border: dashed black 5px;
+    padding: 5px;
+}
+#container #buttons{
+    display: flex;
+    height: 30%;
+    justify-content: space-between;
+
+}
+#container #buttons button{
+    height: 100%;
+    width: 30%;
+    display: block;
+    border: none;
+}
+#rock{
+    background-image: url("rock svg.svg");
+    background-size:cover;
+}
+#paper{
+    background-image: url("paper svg.svg");
+    background-size: cover;
+}
+#scissors{
+    background-image: url("scissors svg.svg");
+    background-size: cover;
+}
+.output{
+    border: dashed 2px;
+    border-radius: 15px;
+}
+#results{
+    height: 10%;
+    padding: 5px;
+    text-align: center;
+}
+#scores{
+    height: 25%;
+    display: flex;
+    justify-content: space-between;
+    padding: 2%;
+}
+#player, #computer{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.label{
+    height: 30%;
+}
+#playerScore,#computerScore{
+    height: 60%;
+}
