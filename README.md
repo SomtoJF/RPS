@@ -7,7 +7,10 @@ This stage was completely built to work only in the console. It gave me a proper
 * Arrays 
 * If-else-if statements and For, while loops to name a few.
 ### Second Stage - Browser Stage
-TBC
+In this stage, the algorithms used in the console game were rewritten to as to dynamically modify the DOM during gameplay. This generally involved tearing down functions and using the logic behind them to create events for the buttons used for playing the game. This stage helped me get a well rounded understanding of;
+* DOM Manipulation
+* Events
+* If-Else statements and Logical Operators to name a few.
 ## Link(s) 
 * [Live Preview]()
 * [The Odin Project](https://www.theodinproject.com)
