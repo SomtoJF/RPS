@@ -51,13 +51,15 @@ function game(){
 }
 console.log(game());
 */
+
 let computerSelectionVar;
 let rock = document.getElementById('rock');
 let paper = document.getElementById('paper');
 let scissors = document.getElementById('scissors');
 let result = document.getElementById('results');
-let playerScore = document.getElementById('playerScore');
-let computerScore = document.getElementById('computerScore');
+let playerScore = 0, computerScore = 0;
+let playerScoreLocation = document.getElementById('playerScore');
+let computerScoreLocation = document.getElementById('computerScore');
 console.log(rock);
 
 let selectionArr = ['rock','paper','scissors'];
@@ -71,15 +73,21 @@ rock.addEventListener('click',function (){
     
     if(computerSelectionVar == 'rock'){
         result.textContent = 'Rock vs Rock, Its a tie.';
+        playerScoreLocation.textContent = playerScore;
+        computerScoreLocation.textContent = computerScore;
         
     }
     else if(computerSelectionVar == 'paper'){
         result.textContent = 'Rock vs Paper, Computer wins this round.';
-
+        computerScore += 1;
+        playerScoreLocation.textContent = playerScore;
+        computerScoreLocation.textContent = computerScore;
     }
     else if(computerSelectionVar == 'scissors'){
         result.textContent = 'Rock vs Scissors, You win this round.';
-
+        playerScore += 1;
+        playerScoreLocation.textContent = playerScore;
+        computerScoreLocation.textContent = computerScore;
     }
     
 });
@@ -89,15 +97,20 @@ paper.addEventListener('click',function (){
 
     if(computerSelectionVar == 'rock'){
         result.textContent = 'Paper vs Rock, You win this round.';
-
+        playerScore += 1;
+        playerScoreLocation.textContent = playerScore;
+        computerScoreLocation.textContent = computerScore;
     }
     else if(computerSelectionVar == 'paper'){
         result.textContent = 'Paper vs Paper, Its a tie.';
-
+        playerScoreLocation.textContent = playerScore;
+        computerScoreLocation.textContent = computerScore;
     }
     else if(computerSelectionVar == 'scissors'){
         result.textContent = 'Paper vs Scissors, Computer wins this round.';
-
+        computerScore += 1;
+        playerScoreLocation.textContent = playerScore;
+        computerScoreLocation.textContent = computerScore;
     }
     
 });
@@ -107,16 +120,32 @@ scissors.addEventListener('click',function (){
     
     if(computerSelectionVar == 'rock'){
         result.textContent = 'Scissors vs Rock, Computer wins this round.';
-
+        computerScore += 1;
+        playerScoreLocation.textContent = playerScore;
+        computerScoreLocation.textContent = computerScore;
     }
     else if(computerSelectionVar == 'paper'){
         result.textContent = 'Scissors vs Paper, You win this round.';
-
+        playerScore += 1;
+        playerScoreLocation.textContent = playerScore;
+        computerScoreLocation.textContent = computerScore;
     }
     else if(computerSelectionVar == 'scissors'){
         result.textContent = 'Scissors vs Scissors, Its a tie.';
-
+        playerScoreLocation.textContent = playerScore;
+        computerScoreLocation.textContent = computerScore;
     }
     
 });
 
+if(computerScore > 4 || playerScore > 4){
+    let replay = confirm("Play Again?");
+    if(replay == true){
+        playerScore = 0;
+        computerScore = 0;
+    }else{
+        rock = undefined;
+        paper = undefined;
+        scissors = undefined;
+    }
+}
