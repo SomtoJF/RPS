@@ -12,7 +12,7 @@ In this stage, the algorithms used in the console game were rewritten to as to d
 * Events
 * If-Else statements and Logical Operators to name a few.
 ## Link(s) 
-* [Live Preview]()
+* [Live Preview](https://somtojf.github.io/RPS/)
 * [Pictures](https://www.subpng.com)
 * [Image Resizer](https://onlinepngtools.com/resize-png)
 * [The Odin Project](https://www.theodinproject.com)
