@@ -13,6 +13,6 @@ In this stage, the algorithms used in the console game were rewritten to as to d
 * If-Else statements and Logical Operators to name a few.
 ## Link(s) 
 * [Live Preview]()
+* [Pictures](https://www.subpng.com)
+* [Image Resizer](https://onlinepngtools.com/resize-png)
 * [The Odin Project](https://www.theodinproject.com)
-
-Credit to http://www.onlinewebfonts.com/icon for the SVGs
