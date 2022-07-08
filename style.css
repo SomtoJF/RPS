@@ -32,6 +32,11 @@ body{
     border: none;
     background-color: inherit;
 }
+
+#container #buttons button:active{
+    border: dashed black 2px;
+}
+
 #rock{
     background-image: url("rockresize.png");
     background-size: initial;
