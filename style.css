@@ -31,6 +31,9 @@ body{
     display: block;
     border: none;
     background-color: inherit;
+    background-size: 50%;
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
 #container #buttons button:active{
@@ -39,18 +42,13 @@ body{
 
 #rock{
     background-image: url("rockresize.png");
-    background-size: initial;
-    background-repeat: no-repeat;
+   
 }
 #paper{
     background-image: url("paper2resize.png");
-    background-size: initial;
-    background-repeat: no-repeat;
 }
 #scissors{
     background-image: url("scissors3resize.png");
-    background-size: initial;
-    background-repeat: no-repeat;
 }
 .output{
     border: dashed 2px;
